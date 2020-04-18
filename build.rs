@@ -2,7 +2,7 @@ extern crate cc;
 
 fn main() {
     cc::Build::new()
-        .file("libdeflate/lib/aligned_malloc.c")
+        .file("libdeflate/lib/utils.c")
         .file("libdeflate/lib/deflate_decompress.c")
         .file("libdeflate/lib/arm/cpu_features.c")
         .file("libdeflate/lib/x86/cpu_features.c")
